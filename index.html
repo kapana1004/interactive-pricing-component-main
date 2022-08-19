@@ -8,32 +8,78 @@
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+<section> 
 
-  Pageviews
-  $ /month
+    <div class="head">
+      <img class="circle" src="./images/pattern-circles.svg" alt="circles">
+      <h1 class="headline"> Simple, traffic-based pricing</h1>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+      <div class="spans1"> 
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+        <spam class="sign-up"> Sign-up for our 30-day trial. </spam>
+        <span class="nocredit"> No credit card required.</span>
+      </div>
+     
 
-  Start my trial
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </div>
+  <div class="card"> 
+
+     <div class="middle">
+
+
+        <div class="slidebox">
+
+          <span class="pageviewers">Pageviews</span>
+          <input class="slider" type="range" min="1" max="5">
+          <spam class="monthprice">$ /month</spam>
+        </div>
+        <div class="checkbox">
+
+          <span>  Monthly Billing </span>
+
+          <input type="checkbox" name="checkanually" class="check" aria-label="input" id="toggle_discount">
+          </input>
+          
+
+          <span> Yearly Billing </span>
+          <button class="discount">25%</button>
+        </div>
+        <hr>
+        
+     </div>
+
+     <div class="last">
+       <span class="spn1"> <img src="./images/icon-check.svg">  Unlimited websites</span>
+       <span class="spn2"> <img src="./images/icon-check.svg"> 100% data ownership</span>
+       <span class="spn3"> <img src="./images/icon-check.svg"> Email reports</span>
+
+      <button class="startbutton"> Start my trial</button>
+
+     </div>
+   
+
   </div>
+ 
+
+
+
+</section>
+  
+
+ 
+  
+
+  
+  
+  
+
+  
+  
+ 
 </body>
 </html>
