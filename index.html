@@ -18,10 +18,11 @@
     <div class="head">
       <img class="circle" src="./images/pattern-circles.svg" alt="circles">
       <h1 class="headline"> Simple, traffic-based pricing</h1>
+      <span class="deskspan">Sign-up for our 30-day trial. No credit card required.</span>
 
       <div class="spans1"> 
 
-        <spam class="sign-up"> Sign-up for our 30-day trial. </spam>
+        <span class="sign-up"> Sign-up for our 30-day trial. </span>
         <span class="nocredit"> No credit card required.</span>
       </div>
      
@@ -34,9 +35,26 @@
 
         <div class="slidebox">
 
-          <span class="pageviewers">Pageviews</span>
+          <span class="pageviewers">100K PAGEVIEWS</span>
           <input class="slider" type="range" min="1" max="5">
-          <spam class="monthprice">$ /month</spam>
+          <div> 
+
+            <span class="dollarspanmob">$16.OO</span>
+            <span class="monthprice"> / month</span>
+          </div>
+          
+        </div>
+
+        <div class="desktopdiv">
+         <div class="fordesk">  
+            <span class="pageviewers" id="pageviewDesk">10K PAGEVIEWS</span>
+
+            <span class="dollarspan" > $8.00</span>
+          
+            <span class="monthprice" id="monthPriceDesk"> /month</span>
+        </div>
+          
+          <input class="slider" type="range" min="1" max="5" id="slidedesk">
         </div>
         <div class="checkbox">
 
@@ -47,16 +65,23 @@
           
 
           <span> Yearly Billing </span>
-          <button class="discount">25%</button>
+          <button class="discount">-25%</button>
+          <button class="discountdesk">25% discount</button>
         </div>
         <hr>
         
      </div>
 
      <div class="last">
-       <span class="spn1"> <img src="./images/icon-check.svg">  Unlimited websites</span>
-       <span class="spn2"> <img src="./images/icon-check.svg"> 100% data ownership</span>
-       <span class="spn3"> <img src="./images/icon-check.svg"> Email reports</span>
+
+      <div class="lastdesk">
+
+        <span class="spn1"> <img src="./images/icon-check.svg">  Unlimited websites</span>
+        <span class="spn2"> <img src="./images/icon-check.svg"> 100% data ownership</span>
+        <span class="spn3"> <img src="./images/icon-check.svg"> Email reports</span>
+
+      </div>
+      
 
       <button class="startbutton"> Start my trial</button>
 
@@ -75,7 +100,7 @@
   
 
   
-  
+  <script src="./slider.js"> </script>
   
 
   
