@@ -13,26 +13,26 @@ priceSlider.addEventListener("input", function(){
 
 
 
-if(priceSlider.value==1){
+if(priceSlider.value==1 &&!discount.checked){
 
     pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
     monthPriceMob.innerHTML="$8.00"
 
-} else if (priceSlider.value==2){
+} else if (priceSlider.value==2 &&!discount.checked){
 
     pageViewInput.innerHTML="50K " + "pageviews".toUpperCase()
     monthPriceMob.innerHTML="$12.00 "
     
-} else if (priceSlider.value==3){
+} else if (priceSlider.value==3 &&!discount.checked){
 
     pageViewInput.innerHTML="100K " + "pageviews".toUpperCase()
     monthPriceMob.innerHTML="$16.00 " 
-} else if (priceSlider.value==4){
+} else if (priceSlider.value==4 &&!discount.checked){
 
     pageViewInput.innerHTML="500K " + "pageviews".toUpperCase()
     monthPriceMob.innerHTML="$24.00 " 
 
-} else if (priceSlider.value==5){
+} else if (priceSlider.value==5 &&!discount.checked){
 
     pageViewInput.innerHTML="1M " + "pageviews".toUpperCase()
     monthPriceMob.innerHTML="$36.00 "
@@ -41,12 +41,38 @@ if(priceSlider.value==1){
 //ვერ დავიჭირე ველიუ (რიცხვითი მნიშვნელობისთვის), რომ მათემატიკური მოქმედება შევასრულო
 
 
-if(discount.checked){
+// if(discount.checked){
     
 
-    const totalValue = (monthPriceMob-monthPriceMob*0.25);
-    monthPriceMob.innerHTML = totalValue;
-}   
+//     const totalValue = (monthPriceMob-monthPriceMob*0.25);
+//     monthPriceMob.innerHTML = totalValue;
+// }  
+
+if(priceSlider.value==1 && discount.checked){
+
+    pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
+    monthPriceMob.innerHTML="$ " + 8*12*0.75+".00"
+
+} else if (priceSlider.value==2 && discount.checked){
+
+    pageViewInput.innerHTML="50K " + "pageviews".toUpperCase()
+    monthPriceMob.innerHTML="$ " + 12*12*0.75+".00"
+    
+} else if (priceSlider.value==3 && discount.checked){
+
+    pageViewInput.innerHTML="100K " + "pageviews".toUpperCase()
+    monthPriceMob.innerHTML="$ " + 16*12*0.75+".00" 
+} else if (priceSlider.value==4 && discount.checked){
+
+    pageViewInput.innerHTML="500K " + "pageviews".toUpperCase()
+    monthPriceMob.innerHTML="$ " + 24*12*0.75+".00" 
+
+} else if (priceSlider.value==5 && discount.checked){
+
+    pageViewInput.innerHTML="1M " + "pageviews".toUpperCase()
+    monthPriceMob.innerHTML="$ " + 36*12*0.75+".00"
+
+}
 
 
 })
@@ -56,7 +82,7 @@ slideDesktop.addEventListener("input", function(event){
 
     console.log(event.target.value);
     
-    if(slideDesktop.value==1){
+    if(slideDesktop.value==1 &&!discount.checked){
 
         pagviewDEsktop.innerHTML="10K " + "pageviews".toUpperCase();
         monthPrice.innerHTML="$8.00"
@@ -79,6 +105,32 @@ slideDesktop.addEventListener("input", function(event){
 
         pagviewDEsktop.innerHTML="1M " + "pageviews".toUpperCase()
         monthPrice.innerHTML="$36.00 "
+    
+    }
+
+    if(slideDesktop.value==1 && discount.checked){
+
+        pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
+        monthPrice.innerHTML="$ " + 8*12*0.75+".00"
+    
+    } else if (slideDesktop.value==2 && discount.checked){
+    
+        pageViewInput.innerHTML="50K " + "pageviews".toUpperCase()
+        monthPrice.innerHTML="$ " + 12*12*0.75+".00"
+        
+    } else if (slideDesktop.value==3 && discount.checked){
+    
+        pageViewInput.innerHTML="100K " + "pageviews".toUpperCase()
+        monthPrice.innerHTML="$ " + 16*12*0.75+".00" 
+    } else if (slideDesktop.value==4 && discount.checked){
+    
+        pageViewInput.innerHTML="500K " + "pageviews".toUpperCase()
+        monthPrice.innerHTML="$ " + 24*12*0.75+".00" 
+    
+    } else if (slideDesktop.value==5 && discount.checked){
+    
+        pageViewInput.innerHTML="1M " + "pageviews".toUpperCase()
+        monthPrice.innerHTML="$ " + 36*12*0.75+".00"
     
     }
 
