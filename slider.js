@@ -9,6 +9,29 @@ let monthPriceMob = document.querySelector(".dollarspanmob");
 let discount = document.querySelector(".check");
 
 
+discount.addEventListener("input", function(){
+
+  if(discount.checked){
+    pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
+    monthPriceMob.innerHTML="$ " + 8*12*0.75+".00";
+    pagviewDEsktop.innerHTML="10K " + "pageviews".toUpperCase();
+    monthPrice.innerHTML="$ " + 8*12*0.75+".00";
+    //slideDesktop.value.innerHTML==1 არ ბრუნდება სლაიდერი საწყის პოზიციაში
+
+
+  }else if(discount){
+
+    pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
+    monthPriceMob.innerHTML="$8"
+    pagviewDEsktop.innerHTML="10K " + "pageviews".toUpperCase();
+    monthPrice.innerHTML="$8"
+    //priceSlider.value.innerHTML==1
+
+  }
+
+
+})
+
 priceSlider.addEventListener("input", function(){
 
 
