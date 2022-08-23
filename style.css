@@ -131,6 +131,7 @@ h1{
     width: 279px;
     margin-bottom: 40px;
     color: rgba(164, 243, 235, 1);
+    cursor: pointer;
 }
 .slider:checked{
 
