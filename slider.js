@@ -153,26 +153,26 @@ slideDesktop.addEventListener("input", function(event){
 
        else if(slideDesktop.value==1 && discount.checked){
 
-        pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
+        pagviewDEsktop.innerHTML="10K " + "pageviews".toUpperCase();
         monthPrice.innerHTML="$ " + 8*12*0.75+".00"
     
     } else if (slideDesktop.value==2 && discount.checked){
     
-        pageViewInput.innerHTML="50K " + "pageviews".toUpperCase()
+        pagviewDEsktop.innerHTML="50K " + "pageviews".toUpperCase()
         monthPrice.innerHTML="$ " + 12*12*0.75+".00"
         
     } else if (slideDesktop.value==3 && discount.checked){
     
-        pageViewInput.innerHTML="100K " + "pageviews".toUpperCase()
+        pagviewDEsktop.innerHTML="100K " + "pageviews".toUpperCase()
         monthPrice.innerHTML="$ " + 16*12*0.75+".00" 
     } else if (slideDesktop.value==4 && discount.checked){
     
-        pageViewInput.innerHTML="500K " + "pageviews".toUpperCase()
+        pagviewDEsktop.innerHTML="500K " + "pageviews".toUpperCase()
         monthPrice.innerHTML="$ " + 24*12*0.75+".00" 
     
     } else if (slideDesktop.value==5 && discount.checked){
     
-        pageViewInput.innerHTML="1M " + "pageviews".toUpperCase()
+        pagviewDEsktop.innerHTML="1M " + "pageviews".toUpperCase()
         monthPrice.innerHTML="$ " + 36*12*0.75+".00"
     
     }
@@ -184,11 +184,7 @@ slideDesktop.addEventListener("input", function(event){
 
 
 
-//set the div to slider with pos. absolute and give 1px width. 
-//in js adding eventlistener on slider and give him function: 
-//with for loop catch the new div`s width  
-    //let i = newDiv.style.width.length;
-    //for("i=1, i<=100, i++"){newDiv.style.background-color:rgba(164, 243, 235, 1)}
+//set the div to slider with pos. absolute and give related width size with slider value in listener. 
 
 
 
