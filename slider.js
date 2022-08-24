@@ -16,7 +16,8 @@ discount.addEventListener("input", function(){
     monthPriceMob.innerHTML="$ " + 8*12*0.75+".00";
     pagviewDEsktop.innerHTML="10K " + "pageviews".toUpperCase();
     monthPrice.innerHTML="$ " + 8*12*0.75+".00";
-    //slideDesktop.value.innerHTML==1 არ ბრუნდება სლაიდერი საწყის პოზიციაში
+    slideDesktop.value =1;
+    priceSlider.value = 1;
 
 
   }else if(!discount.checked){
@@ -25,14 +26,18 @@ discount.addEventListener("input", function(){
     monthPriceMob.innerHTML="$8"
     pagviewDEsktop.innerHTML="10K " + "pageviews".toUpperCase();
     monthPrice.innerHTML="$8"
-    priceSlider.value.innerHTML==1;
+    slideDesktop.value =1;
+    priceSlider.value=1;
 
   }
 
 
 })
 
+//FOR MOBILE:
+
 priceSlider.addEventListener("input", function(){
+
 
 
 if(priceSlider.value==0 &&!discount.checked){
@@ -41,7 +46,7 @@ if(priceSlider.value==0 &&!discount.checked){
         monthPriceMob.innerHTML="$0.00"
     
     }
-if(priceSlider.value==1 &&!discount.checked){
+   else if(priceSlider.value==1 &&!discount.checked){
 
     pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
     monthPriceMob.innerHTML="$8.00"
@@ -66,17 +71,13 @@ if(priceSlider.value==1 &&!discount.checked){
     monthPriceMob.innerHTML="$36.00 "
 
 }
-//ვერ დავიჭირე ველიუ (რიცხვითი მნიშვნელობისთვის), რომ მათემატიკური მოქმედება შევასრულო
 
+ if(priceSlider.value==0 && discount.checked){
 
-// if(discount.checked){
-    
-
-//     const totalValue = (monthPriceMob-monthPriceMob*0.25);
-//     monthPriceMob.innerHTML = totalValue;
-// }  
-
-if(priceSlider.value==1 && discount.checked){
+    pageViewInput.innerHTML="0 " + "pageviews".toUpperCase();
+    monthPriceMob.innerHTML="0.00"
+}
+   else if (priceSlider.value==1 && discount.checked){
 
     pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
     monthPriceMob.innerHTML="$ " + 8*12*0.75+".00"
@@ -105,12 +106,20 @@ if(priceSlider.value==1 && discount.checked){
 
 })
 
+//FOR DESKTOP:
 
 slideDesktop.addEventListener("input", function(event){
 
     console.log(event.target.value);
+
+    if(slideDesktop.value==0 &&!discount.checked){
+
+        pagviewDEsktop.innerHTML="0 " + "pageviews".toUpperCase();
+        monthPrice.innerHTML="$0.00"
     
-    if(slideDesktop.value==1 &&!discount.checked){
+    }
+    
+      else if(slideDesktop.value==1 &&!discount.checked){
 
         pagviewDEsktop.innerHTML="10K " + "pageviews".toUpperCase();
         monthPrice.innerHTML="$8.00"
@@ -135,8 +144,14 @@ slideDesktop.addEventListener("input", function(event){
         monthPrice.innerHTML="$36.00 "
     
     }
+    if(slideDesktop.value==0 &&discount.checked){
 
-    if(slideDesktop.value==1 && discount.checked){
+        pagviewDEsktop.innerHTML="0 " + "pageviews".toUpperCase();
+        monthPrice.innerHTML="$0.00"
+    
+    }
+
+       else if(slideDesktop.value==1 && discount.checked){
 
         pageViewInput.innerHTML="10K " + "pageviews".toUpperCase();
         monthPrice.innerHTML="$ " + 8*12*0.75+".00"
@@ -162,13 +177,7 @@ slideDesktop.addEventListener("input", function(event){
     
     }
 
-    slideDesktop.style.background = `linear-gradient(
-		to right,
-		hsl(174, 77%, 80%) 0%,
-		hsl(174, 77%, 80%),
-		 hsl(224, 65%, 95%) 50%,
-		 hsl(224, 65%, 95%) 100%
-	)`;
+  
 
 
     })
