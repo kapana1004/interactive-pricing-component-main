@@ -33,6 +33,7 @@ section{
 .discountdesk{
 
     display: none;
+    padding: 7px;
 }
 
 
@@ -377,6 +378,7 @@ hr{
     .startbutton{
 
         margin-left: 133px;
+        
     }
 
     hr{
@@ -427,6 +429,32 @@ hr{
         color: rgba(132, 142, 173, 1);
     }
 
+     .slider::-webkit-slider-thumb{
+
+        -webkit-appearance: none;
+        /* background-size: cover; */
+        background-image: url("./images/icon-slider.svg");
+        position: relative;
+        background-color:  rgba(16, 216, 196, 1);
+        width: 40px;
+        height: 40px;
+        z-index: 99;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+
+
+        
+       
+    }
+    .slider{
+        -webkit-appearance: none;
+       
+
+    }
+
+    }
 
 
 
@@ -434,4 +462,4 @@ hr{
 
 
 
-}
+
